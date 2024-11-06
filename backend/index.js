@@ -10,7 +10,7 @@ app.use(express.json());
 
 const PORT = 3000;
 
-// Middleware to verify Twitter API token
+// verify Twitter API token
 app.use((req, res, next) => {
   if (!process.env.TWITTER_BEARER_TOKEN) {
     return res.status(500).json({ error: 'Twitter API token missing' });
@@ -31,7 +31,7 @@ const fetchWithRetry = async (url, options, retries = 5) => {
         await new Promise((resolve) => setTimeout(resolve, retryAfter * 1000));
         return fetchWithRetry(url, options, retries - 1);
       }
-      throw error; // re-throw error if not a 429 or retries exhausted
+      throw error; // re throw error if not a 429 or retries exhausted
     }
   };
   
@@ -71,11 +71,10 @@ const fetchWithRetry = async (url, options, retries = 5) => {
       return tweetsResponse.data; // Return tweets data
     } catch (error) {
       console.error('Error fetching data from Twitter API:', error);
-      throw error; // Re-throw the error to handle it in the calling function
+      throw error; 
     }
   };
   
-
 
 
   
@@ -83,10 +82,10 @@ const fetchWithRetry = async (url, options, retries = 5) => {
   app.post('/api/analyze', async (req, res) => {
     const { username } = req.body;
     try {
-      const twitterData = await fetchTwitterData(username, 5); // Fetch the top 50 tweets
+      const twitterData = await fetchTwitterData(username, 5); // Fetch the top 50 tweets, 5 for testing purposes (429 error)
       
-      // Here, implement your sentiment analysis and data processing
-      // For now, we'll just return the fetched tweets
+      // implement sentiment analysis and data processing
+      //  returning the fetched tweets for now
       res.json({ tweets: twitterData });
     } catch (error) {
       res.status(500).json({ error: 'Error fetching Twitter data' });
