@@ -1,0 +1,172 @@
+{
+  "analyzed_tweets": [
+    {
+      "id": "754211978827198465",
+      "text": "So I just made a new account on Twitter so why not go and check it out huh?! @ItsAlinaIqbal",
+      "created_at": "2016-07-16T07:12:02.000Z",
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.7097
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.5358
+      },
+      "analyzed_at": "2024-12-14T12:49:48.841692"
+    },
+    {
+      "id": "753184262241779713",
+      "text": "https://t.co/iGEzPhhIgm\nGo check out my new and first YouTube video! Give it a thumbs and subscribe!",
+      "created_at": "2016-07-13T11:08:16.000Z",
+      "sentiment": {
+        "label": "positive",
+        "score": 0.9029
+      },
+      "emotion": {
+        "label": "neutral",
+        "score": 0.4042
+      },
+      "analyzed_at": "2024-12-14T12:49:48.973547"
+    },
+    {
+      "id": "753117918033043456",
+      "text": "So basically I came back home @ 2 in the mornin and then woke up @ like 7am! Ughhhh.....\ud83d\ude22\ud83d\ude34",
+      "created_at": "2016-07-13T06:44:38.000Z",
+      "sentiment": {
+        "label": "negative",
+        "score": 0.8803
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.6583
+      },
+      "analyzed_at": "2024-12-14T12:49:49.063873"
+    },
+    {
+      "id": "752971477339795457",
+      "text": "RT @TeenChoiceFOX: Double or nothing to win #ChoiceMaleWebStar? Retweet to vote for twins @EthanDolan and @GraysonDolan! #TeenChoice https:\u2026",
+      "created_at": "2016-07-12T21:02:44.000Z",
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.7624
+      },
+      "emotion": {
+        "label": "fear",
+        "score": 0.4833
+      },
+      "analyzed_at": "2024-12-14T12:49:49.163574"
+    },
+    {
+      "id": "752970636771885056",
+      "text": "Doesn't it drive u crazy when someone keeps playing a song over and over just cause they like it?! Goddd... It makes me freak out!!\ud83d\udd2b\ud83d\udc80",
+      "created_at": "2016-07-12T20:59:23.000Z",
+      "sentiment": {
+        "label": "negative",
+        "score": 0.9145
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.4107
+      },
+      "analyzed_at": "2024-12-14T12:49:49.262907"
+    },
+    {
+      "id": "752782693142827008",
+      "text": "My #TeenChoiceAwards goes to @EthanDolan @GraysonDolan  for #ChoiceMaleWebStar",
+      "created_at": "2016-07-12T08:32:34.000Z",
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.7525
+      },
+      "emotion": {
+        "label": "fear",
+        "score": 0.6622
+      },
+      "analyzed_at": "2024-12-14T12:49:49.366342"
+    },
+    {
+      "id": "752780118158966784",
+      "text": "OMG! Can't wait for tom its TUESDAY!!! AYYYEEE!!!\u270c\ud83c\udffb\u270c\ud83c\udffb\nHit that retweet button if u can't wait!!! https://t.co/OxNzida1MU",
+      "created_at": "2016-07-12T08:22:20.000Z",
+      "sentiment": {
+        "label": "positive",
+        "score": 0.9911
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.7972
+      },
+      "analyzed_at": "2024-12-14T12:49:49.474175"
+    },
+    {
+      "id": "752779554591236096",
+      "text": "Sooo today's my last day here in Dubai and I'm actually really saaddd!!! Gonna miss evrthin here!\ud83d\ude29\ud83d\ude22",
+      "created_at": "2016-07-12T08:20:06.000Z",
+      "sentiment": {
+        "label": "negative",
+        "score": 0.8094
+      },
+      "emotion": {
+        "label": "sadness",
+        "score": 0.9397
+      },
+      "analyzed_at": "2024-12-14T12:49:49.577824"
+    },
+    {
+      "id": "752779153817083904",
+      "text": "So this is my second tweet and I don't know what to write so this is it.....I guess?\u00bf",
+      "created_at": "2016-07-12T08:18:30.000Z",
+      "sentiment": {
+        "label": "negative",
+        "score": 0.5726
+      },
+      "emotion": {
+        "label": "neutral",
+        "score": 0.652
+      },
+      "analyzed_at": "2024-12-14T12:49:49.671186"
+    },
+    {
+      "id": "752778983939436544",
+      "text": "Gooooddd Morningggg....\ud83d\ude34",
+      "created_at": "2016-07-12T08:17:50.000Z",
+      "sentiment": {
+        "label": "positive",
+        "score": 0.4829
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.771
+      },
+      "analyzed_at": "2024-12-14T12:49:49.794262"
+    },
+    {
+      "id": "752778856889741312",
+      "text": "RT @TeenChoiceFOX: 2 Dolans are better than 1! RT to vote the twins (@EthanDolan &amp; @GraysonDolan) for #ChoiceYouTuber! #TeenChoice https://\u2026",
+      "created_at": "2016-07-12T08:17:20.000Z",
+      "sentiment": {
+        "label": "positive",
+        "score": 0.7096
+      },
+      "emotion": {
+        "label": "fear",
+        "score": 0.3274
+      },
+      "analyzed_at": "2024-12-14T12:49:49.920037"
+    },
+    {
+      "id": "752778791697653760",
+      "text": "RT @TeenChoiceFOX: Hit that retweet button to vote for The Dolan Twins, @EthanDolan &amp; @GraysonDolan! #ChoiceMaleWebStar #TeenChoice https:/\u2026",
+      "created_at": "2016-07-12T08:17:04.000Z",
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.6726
+      },
+      "emotion": {
+        "label": "fear",
+        "score": 0.6373
+      },
+      "analyzed_at": "2024-12-14T12:49:50.029782"
+    }
+  ]
+}
