@@ -1,0 +1,184 @@
+{
+  "analyzed_tweets": [
+    {
+      "id": "1853995861497307624",
+      "text": "California - 1 More Hour!\n\nPolls are open until 8:00 PM local. If you are in line by the cutoff they must let you vote.\n\nGO NOW and STAY IN LINE!",
+      "sentiment": {
+        "label": "positive",
+        "score": 0.6901
+      },
+      "analyzed_at": "2024-11-12T16:53:52.506304"
+    },
+    {
+      "id": "1853981935242002892",
+      "text": "RT @realDonaldTrump: HI REPUBLICANS! IF YOU’RE IN LINE—STAY IN LINE!",
+      "sentiment": {
+        "label": "negative",
+        "score": 0.5727
+      },
+      "analyzed_at": "2024-11-12T16:53:52.555071"
+    },
+    {
+      "id": "1853980946002821617",
+      "text": "Montana - 1 More Hour!\n\nPolls are open until 8:00 PM local.\n\nGO NOW and STAY IN LINE!",
+      "sentiment": {
+        "label": "positive",
+        "score": 0.6912
+      },
+      "analyzed_at": "2024-11-12T16:53:52.601904"
+    },
+    {
+      "id": "1853980907041882307",
+      "text": "Nevada - 1 More Hour!\n\nPolls are open until 7:00 PM local. If you are in line by the cutoff they must let you vote.",
+      "sentiment": {
+        "label": "positive",
+        "score": 0.696
+      },
+      "analyzed_at": "2024-11-12T16:53:52.654303"
+    },
+    {
+      "id": "1853977454685356105",
+      "text": "Pennsylvania - Cambria County polling hours have been EXTENDED to 10pm. STAY IN LINE AND VOTE!",
+      "sentiment": {
+        "label": "positive",
+        "score": 0.8624
+      },
+      "analyzed_at": "2024-11-12T16:53:52.701911"
+    },
+    {
+      "id": "1853971234567890001",
+      "text": "I'm so tired of this nonsense. Just leave us alone already!",
+      "sentiment": {
+        "label": "negative",
+        "score": 0.9123
+      },
+      "analyzed_at": "2024-11-12T16:54:12.701911"
+    },
+    {
+      "id": "1853971234567890002",
+      "text": "This is the best day ever! Feeling grateful.",
+      "sentiment": {
+        "label": "positive",
+        "score": 0.9532
+      },
+      "analyzed_at": "2024-11-12T16:54:15.701911"
+    },
+    {
+      "id": "1853971234567890003",
+      "text": "Traffic was terrible today, but at least the weather is nice.",
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.7031
+      },
+      "analyzed_at": "2024-11-12T16:54:18.701911"
+    },
+    {
+      "id": "1853971234567890004",
+      "text": "The new update on the app is so buggy! Extremely disappointed.",
+      "sentiment": {
+        "label": "negative",
+        "score": 0.8765
+      },
+      "analyzed_at": "2024-11-12T16:54:20.701911"
+    },
+    {
+      "id": "1853971234567890005",
+      "text": "Had a fantastic meeting with the team. The project is on track.",
+      "sentiment": {
+        "label": "positive",
+        "score": 0.8421
+      },
+      "analyzed_at": "2024-11-12T16:54:22.701911"
+    },
+    {
+      "id": "1853971234567890006",
+      "text": "Neutral day, nothing exciting happened.",
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.5023
+      },
+      "analyzed_at": "2024-11-12T16:54:25.701911"
+    },
+    {
+      "id": "1853971234567890007",
+      "text": "Had a terrible experience at the store today. Will not return.",
+      "sentiment": {
+        "label": "negative",
+        "score": 0.8942
+      },
+      "analyzed_at": "2024-11-12T16:54:27.701911"
+    },
+    {
+      "id": "1853971234567890008",
+      "text": "Feeling so excited for the weekend. It’s going to be amazing!",
+      "sentiment": {
+        "label": "positive",
+        "score": 0.9012
+      },
+      "analyzed_at": "2024-11-12T16:54:30.701911"
+    },
+    {
+      "id": "1853971234567890009",
+      "text": "Why does this always happen to me? Feeling really down.",
+      "sentiment": {
+        "label": "negative",
+        "score": 0.9176
+      },
+      "analyzed_at": "2024-11-12T16:54:35.701911"
+    },
+    {
+      "id": "1853971234567890010",
+      "text": "This is exactly what I needed to hear today. Thank you!",
+      "sentiment": {
+        "label": "positive",
+        "score": 0.8701
+      },
+      "analyzed_at": "2024-11-12T16:54:40.701911"
+    },
+    {
+      "id": "1853971234567890011",
+      "text": "The presentation was fine, but nothing groundbreaking.",
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.6203
+      },
+      "analyzed_at": "2024-11-12T16:54:45.701911"
+    },
+    {
+      "id": "1853971234567890012",
+      "text": "I love how the new policy supports everyone equally.",
+      "sentiment": {
+        "label": "positive",
+        "score": 0.8735
+      },
+      "analyzed_at": "2024-11-12T16:54:50.701911"
+    },
+    {
+      "id": "1853971234567890013",
+      "text": "Not sure how I feel about this news, need more details.",
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.5056
+      },
+      "analyzed_at": "2024-11-12T16:54:55.701911"
+    },
+    {
+      "id": "1853971234567890014",
+      "text": "Absolutely devastated by what I just heard.",
+      "sentiment": {
+        "label": "negative",
+        "score": 0.9321
+      },
+      "analyzed_at": "2024-11-12T16:55:00.701911"
+    },
+    {
+      "id": "1853971234567890015",
+      "text": "Such a wonderful surprise! This made my day.",
+      "sentiment": {
+        "label": "positive",
+        "score": 0.9212
+      },
+      "analyzed_at": "2024-11-12T16:55:05.701911"
+    }
+  ]
+}

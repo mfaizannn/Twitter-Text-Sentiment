@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+/* Add these variables at the top for X's color scheme */
+:root {
+  --x-background: #15202b;
+  --x-card-bg: #192734;
+  --x-text: #ffffff;
+  --x-secondary-text: #8899a6;
+  --x-border: #38444d;
+  --x-blue: #1da1f2;
+  --x-hover: #22303c;
+  --sentiment-positive: rgba(23, 191, 99, 0.2);
+  --sentiment-negative: rgba(224, 36, 94, 0.2);
+  --sentiment-neutral: rgba(136, 153, 166, 0.2);
+}
+
+body {
+  background-color: var(--x-background);
+  color: var(--x-text);
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: "Open Sans", sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--x-background);
+}
+.emotion-chart {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.overall-sentiment {
+  background: var(--x-card-bg);
+  padding: 16px 8px;
+  margin: 20px 0;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+  border: 1px solid var(--x-border);
+}
+.sentiment-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--x-text);
+  margin-bottom: 10px;
+}
+
+/* Styling the "Overall Sentiment Score" value */
+.sentiment-score {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: var(--x-blue);
+  margin: 0;
+}
+
+.twitterheading {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--x-text);
+  margin: 15px 0;
+}
+
+.twitterheading2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--x-text);
+  margin: 15px 0;
+}
+
+.tweets-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+.positive-tweets,
+.negative-tweets,
+.neutral-tweets {
+  background-color: var(--x-card-bg);
+  border-radius: 16px;
+  padding: 25px;
+  width: 350px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--x-border);
+}
+
+/* Titles for each category */
+.positive-tweets h2,
+.negative-tweets h2,
+.neutral-tweets h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--x-text);
+}
+
+/* Individual tweet item */
+.positive-tweets li,
+.negative-tweets li,
+.neutral-tweets li {
+  background-color: var(--x-card-bg);
+  border: 1px solid var(--x-border);
+  border-radius: 12px;
+  padding: 12px;
+  color: var(--x-text);
+  box-shadow: none;
+  list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  word-wrap: break-word;
+}
+
+.positive-tweets li {
+  background-color: rgba(23, 191, 99, 0.1);
+}
+
+.negative-tweets li {
+  background-color: rgba(224, 36, 94, 0.1);
+}
+.neutral-tweets li {
+  background-color: rgba(29, 161, 242, 0.1);
+  color: #ffffff !important;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.positive-tweets h2 {
+  color: #17bf63;
+}
+
+.negative-tweets h2 {
+  color: #e0245e;
+}
+
+.neutral-tweets h2 {
+  color: var(--x-blue);
+}
+
+.positive-tweets li:hover,
+.negative-tweets li:hover,
+.neutral-tweets li:hover {
+  background-color: var(--x-hover);
+  border-color: var(--x-blue);
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+  color: #ffffff !important;
+}
+
+.bigcontainer {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: var(--x-card-bg);
+  border-radius: 25px;
+  padding: 10px 15px;
+  margin: 20px 0;
+  width: 400px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  border: 1px solid var(--x-border);
+  color: var(--x-text);
+}
+
+.search-icon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: var(--x-blue);
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px;
+  color: var(--x-text);
+  padding: 0 10px;
+}
+
+.search-input::placeholder {
+  color: var(--x-secondary-text);
+}
+
+.search-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--x-blue);
+  padding: 0 10px;
+  outline: none;
+}
+
+.search-bar:hover {
+  background-color: var(--x-hover);
+  border-color: var(--x-blue);
+}
+
+.search-button:hover {
+  color: var(--x-blue);
+}
+
+ul {
+  padding: 0;
+}
+
+@media (max-width: 1200px) {
+  .tweets-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .positive-tweets,
+  .negative-tweets,
+  .neutral-tweets {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .search-bar {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+/* Update charts colors */
+.recharts-text {
+  fill: var(--x-text) !important;
+}
+
+.recharts-cartesian-grid line {
+  stroke: var(--x-border) !important;
+}
+
+.recharts-cartesian-axis-line {
+  stroke: var(--x-border) !important;
+}
+
+/* Add a subtle blue glow to the search bar when focused */
+.search-input:focus {
+  background-color: var(--x-hover);
+}
+
+/* Update error message styling */
+.error-message {
+  color: #e0245e !important;
+  background-color: rgba(224, 36, 94, 0.1);
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(224, 36, 94, 0.3);
+}
+
+/* Add subtle transitions */
+.search-bar,
+.positive-tweets li,
+.negative-tweets li,
+.neutral-tweets li {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Add styles for the overall sentiment message */
+.sentiment-summary {
+  color: #ffffff;
+  font-weight: 600;
+  background-color: var(--x-card-bg);
+  border: 2px solid var(--x-border);
+}
+
+/* Add these classes for different sentiment backgrounds */
+.overall-sentiment.positive {
+  background: var(--sentiment-positive);
+}
+
+.overall-sentiment.negative {
+  background: var(--sentiment-negative);
+}
+
+.overall-sentiment.neutral {
+  background: var(--sentiment-neutral);
+}
+
+/* Update text colors for better visibility */
+.sentiment-summary {
+  color: #ffffff;
+  font-weight: 600;
+  background-color: var(--x-card-bg);
+  border: 2px solid var(--x-border);
+}
+
+/* Make tweet text more visible */
+.positive-tweets li,
+.negative-tweets li,
+.neutral-tweets li {
+  color: #ffffff;
+  font-weight: 500;
+  background-color: var(--x-card-bg);
+  border: 1px solid var(--x-border);
+}
+
+/* Brighten the category headers */
+.positive-tweets h2 {
+  color: #1dbf73;
+  font-weight: 700;
+}
+
+.negative-tweets h2 {
+  color: #ff4b6e;
+  font-weight: 700;
+}
+
+.neutral-tweets h2 {
+  color: #3cc7ff;
+  font-weight: 700;
+}
+
+/* Make sentiment score more visible */
+.sentiment-score {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Update chart text color */
+.recharts-text {
+  fill: #ffffff !important;
+  font-weight: 500 !important;
+}
+
+/* Make search text more visible */
+.search-input {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.search-input::placeholder {
+  color: #8899a6;
+}
+
+/* Brighten main headings */
+.twitterheading,
+.twitterheading2 {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Update chart text colors */
+.recharts-text,
+.recharts-cartesian-axis-tick-value {
+  fill: #ffffff !important;
+  font-weight: 500 !important;
+}
+
+.recharts-label,
+.recharts-xAxis .recharts-text,
+.recharts-yAxis .recharts-text {
+  fill: #ffffff !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+/* Ensure legend text is also white */
+.recharts-legend-item-text {
+  color: #ffffff !important;
+}
+
+/* Add this to your App.css */
+.sentiment-line-chart {
+  width: 100%;
+  max-width: 1000px; /* Increased max-width */
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--x-card-bg);
+  border-radius: 12px;
+  border: 1px solid var(--x-border);
+}
+
+/* Add styles for the header buttons container */
+.header-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Style the information button */
+.info-button {
+  background-color: var(--x-blue);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.info-button:hover {
+  background-color: #1991db;
+  transform: translateY(-2px);
+}
+
+/* Add styles for the information page */
+.information-page {
+  background-color: var(--x-background);
+  min-height: 100vh;
+  padding: 40px;
+  color: var(--x-text);
+}
+
+.info-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--x-card-bg);
+  border-radius: 16px;
+  padding: 30px;
+  border: 1px solid var(--x-border);
+}
+
+.info-section {
+  margin-bottom: 30px;
+}
+
+.info-section h2 {
+  color: var(--x-blue);
+  margin-bottom: 15px;
+}
+
+.info-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.info-section li {
+  margin-bottom: 10px;
+}
+
+.back-button {
+  background-color: var(--x-blue);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #1991db;
+  transform: translateY(-2px);
+}
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
